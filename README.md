@@ -5,7 +5,7 @@ Un buscador de series y películas (práctica).
 - ✅ Usar API Fetch para convertir las tarjetas (figure) estáticas a dinámicas.
 - ✅  Mejorar el responsive design del proyecto (95% completado).
 - ✅ Agregar una ficha de Imdb correspondiente cada película.
-- Poder:
+
  - Agregar una película (y comprobar que uno haya una igual anteriormente).
  - Modificar datos de una película ya existente.
  - Eliminar una película existente.
