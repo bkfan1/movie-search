@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieSearch</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <nav>
+        <h1 class="nav-title">MovieSearch <i class="bi bi-search"></i></h1>
+        <input type="text" name="" id="search-input" placeholder="Buscar series, películas...">
+    </nav>
+
+    <section class="media-container" id="media-container">
+
+        <div class="modal-container hidden" id="modal-container">
+
+            <button class="modal-container-btn" id="modal-btn"><i class="bi bi-x-circle"></i></button>
+            
+            <figure class="modal-window" id="modal-window">
+                <img src="" alt="" class="modal-img" id="modal-img">
+    
+                <div class="modal-info-container">
+                    <h1 class="modal-title" id="modal-title"></h1>
+                    <h4 class="modal-mediatype" id="modal-mediatype"></h4>
+
+    
+                    <span class="modal-sinopsis-title">Sinopsis:</span>
+                    <p class="modal-description" id="modal-description"></p>
+                    <button class="modal-imdb-btn"><a href="" target="_blank" id="imdb-link">Ver perfil en IMDB <i class="bi bi-film color-black"></i></a></button>
+                </div>
+
+            </figure>
+        </div>
+
+    </section>
+
+    <template id="template-card">
+        <figure class="movie-card">
+            <div class="movie-content">
+                <img src="" id="movie-img" class="movie-img" alt="">
+                <div class="movie-card-info-container">
+                    <h1 id="modal-title" class="movie-card-title"></h1>
+                    <p id="modal-description" class="movie-card-description">
+                    </p>
+                </div>
+            </div>
+        </figure>
+    </template>
+
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
