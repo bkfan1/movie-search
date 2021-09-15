@@ -95,7 +95,7 @@ input:focus{outline: 2px solid #007aff; color: black;}
 }
 .modal-window{
     display: flex;
-    width: 555px;
+    max-width: 555px;
     height: 400px;
 
     background-color: #141a32;
@@ -167,13 +167,30 @@ input:focus{outline: 2px solid #007aff; color: black;}
     }
 }
 
-@media screen and (max-width:493px) {
+@media screen and (max-width: 570px) {
+    
+    .modal-description{
+        font-size: 1.55ch;
+    }
+    .modal-window{
+        width: 480px;
+        height: 420px;
+    }
+}
+
+@media screen and (max-width:494px) {
 
     .media-container{
         grid-template-columns: repeat(2, minmax(100px,1fr));
         grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     }
 
+    .modal-description{
+        font-size: 1.5ch;
+    }
+    .modal-window{
+        width: 450px;
+    }
 }
 
 @media screen and (max-width:459px) {
@@ -185,7 +202,7 @@ input:focus{outline: 2px solid #007aff; color: black;}
 
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:454px) {
 
     .media-container{
         grid-template-columns: repeat(2, minmax(100px,1fr));
