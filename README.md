@@ -3,7 +3,7 @@ Un buscador de series y películas (práctica).
 
 ## Metas:
 - ✅ Usar API Fetch para convertir las tarjetas (figure) estáticas a dinámicas.
-- ✅  Mejorar el responsive design del proyecto (95% completado).
+- ✅  Mejorar el responsive design del proyecto (98% completado).
 - ✅ Agregar una ficha de Imdb correspondiente cada película.
 
  - Agregar una película (y comprobar que uno haya una igual anteriormente).
@@ -22,3 +22,9 @@ Un buscador de series y películas (práctica).
 - Se agregó una película más a db.json.
 - Se corrigió el código de la función renderCards() en el archivo index.js.
 - Se modificó la función setInfoModal() para agregar más datos de las series y películas a la ventana modal.
+
+# 15/09/21
+- Se agregó una nueva función (fetchMovies()) para reemplazar el proceso de obtener los datos de renderizarlos.
+- Se refactorizaron las funciones, adaptándolas así a async-await.
+- Se corrigieron errores de declaraciones de constantes y variables.
+- Se corrigió el responsive design de las tarjetas y su contenedor principal.
