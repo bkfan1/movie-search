@@ -35,4 +35,5 @@ Un buscador de series y películas (práctica).
 - Se refactorizó el código dentro de algunas funciones para hacerlo más legible.
 - Se cambió el  tipo de función (arrow) de fetchMovies() a la forma tradicional (palabra reservada "function").
 - Se creó una mini función para desocultar/mostrar la ventana modal.
+- Se removieron espacios en blanco del archivo styles.css y se agregaron comentarios para dividir los tipos de estilos.
 

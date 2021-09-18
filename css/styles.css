@@ -1,3 +1,4 @@
+/* ---- RESET ----*/
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +8,8 @@
     outline: none;
     color: white;
 }
+
+/* ---- CUSTOM STYLES ---- */
 
 body{min-height: 100vh; background-color: #080f28;}
 
@@ -76,7 +79,6 @@ input:focus{outline: 2px solid #007aff; color: black;}
     z-index: -5;
 }
 
-
 .modal-container{
     display: flex;
     position: absolute;
@@ -93,6 +95,7 @@ input:focus{outline: 2px solid #007aff; color: black;}
     min-height:100vh;
     background-color: rgba(0, 0, 0, 0.842);
 }
+
 .modal-window{
     display: flex;
     max-width: 555px;
@@ -132,7 +135,6 @@ input:focus{outline: 2px solid #007aff; color: black;}
     border-radius: 5px;
 }
 
-
 .modal-sinopsis-title{font-weight: bold;}
 
 .modal-imdb-btn:hover{
@@ -151,12 +153,14 @@ input:focus{outline: 2px solid #007aff; color: black;}
     order: 1;
 }
 
+
+/* ---- MEDIA QUERIES ----*/
+
 @media screen and (max-width:1259px) {
     .media-container{
         grid-template-columns: repeat(3, minmax(100px,1fr));
         grid-template-rows: repeat(3, minmax(100px, 1fr));
     }
-    
 }
 
 @media screen and (max-width:729px) {
@@ -199,7 +203,6 @@ input:focus{outline: 2px solid #007aff; color: black;}
         grid-template-columns: repeat(2, minmax(100px,1fr));
         grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     }
-
 }
 
 @media screen and (max-width:454px) {
@@ -213,5 +216,4 @@ input:focus{outline: 2px solid #007aff; color: black;}
         width: 120px;
         height: 180px;
     }
-    
 }
