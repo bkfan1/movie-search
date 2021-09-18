@@ -28,3 +28,11 @@ Un buscador de series y películas (práctica).
 - Se refactorizaron las funciones, adaptándolas así a async-await.
 - Se corrigieron errores de declaraciones de constantes y variables.
 - Se corrigió el responsive design de las tarjetas y su contenedor principal.
+
+# 18/09/21
+
+- Se crearon archivos modulares para las funciones que antiguamente estaban en index.js.
+- Se refactorizó el código dentro de algunas funciones para hacerlo más legible.
+- Se cambió el  tipo de función (arrow) de fetchMovies() a la forma tradicional (palabra reservada "function").
+- Se creó una mini función para desocultar/mostrar la ventana modal.
+
