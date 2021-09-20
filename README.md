@@ -37,3 +37,12 @@ Un buscador de series y películas (práctica).
 - Se creó una mini función para desocultar/mostrar la ventana modal.
 - Se removieron espacios en blanco del archivo styles.css y se agregaron comentarios para dividir los tipos de estilos.
 
+# 19/09/21
+- Se implementó SASS al proyecto para escribir código css mucho más eficiente.
+- Se creó un archivo styles.scss dentro de la carpeta scss.
+- Se agregó un módulo (_variables.css) a la carpeta scss para declarar estilos reutilizables.
+- Se refactorizó el código de las funciones setInfoModal() y renderCards().
+- Se agregaron nuevas etiquetas templates de algunos componentes a usar (modal-window y add-form).
+- Se agregó un pie de página (footer) al index.html.
+- Se agregó una función ( showForm() ) para testear un código y diseño en específico.
+

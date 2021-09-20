@@ -2,50 +2,35 @@ export {setInfoModal, hideModal};
 
 const d = document;
 
-function setInfoModal(modalContainerID, cardSelector){
+function setInfoModal(){
 
-    let cards = d.querySelectorAll(cardSelector),
-    modalAttributes = [ 
-        d.getElementById('modal-img'),
-        d.getElementById('modal-title'), 
-        d.getElementById('modal-description'), 
-        d.getElementById('modal-mediatype'), 
-        d.getElementById('imdb-link')
-    ];
+    let modalContainer = d.getElementById('modal-container');
+    let modalWindow = d.importNode(d.getElementById('modal-window__template').content, true);
+    let cards = d.querySelectorAll('.movie-card');
 
-    d.addEventListener("click", async (e)=>{
+
+    d.addEventListener("click", (e)=>{
+
         cards.forEach((card)=>{
-            if(e.target === card || e.target.matches(`${card.classList} *`)){
-                let cardData = [
-                    card.querySelector('#movie-img').getAttribute('src'),
-                    card.getAttribute('data-title'),
-                    card.getAttribute('data-description'),
-                    card.getAttribute('data-type'),
-                    card.getAttribute('data-year'),
-                    card.getAttribute('data-imdb')
-                ];
-                // Setting...
-                //IMG
-                modalAttributes[0].setAttribute('src', `${cardData[0]}`);
-                // Title
-                modalAttributes[1].innerText = `${cardData[1]}`;
-                // Description
-                modalAttributes[2].innerText = `${cardData[2]}`;
-                // MediaType
-                modalAttributes[3].innerText = `${cardData[3]} (${cardData[4]})`;
-                // IMDB link
-                modalAttributes[4].href = `${cardData[5]}`
-                // ...
+            if(e.target === card || e.target == card.querySelector('.movie-card__img')){
+
+                modalContainer.appendChild(modalWindow);
+
+                d.getElementById('modal-img').setAttribute('src', `${card.getAttribute('data-poster')}`);
+                d.getElementById('modal-title').textContent = `${card.getAttribute('data-title')}`;
+                d.getElementById('modal-mediatype').textContent = `${card.getAttribute('data-type')} - ${card.getAttribute('data-year')}`;
+                d.getElementById('modal-description').textContent = `${card.getAttribute('data-description')}`;
+                d.getElementById('imdb-link').href = `${card.getAttribute('data-imdb')}`;     
+                
                 showModal();
             }
         })
+    
     })
 
 }
 
-function showModal(){
-    d.getElementById('modal-container').classList.remove('hidden');
-}
+function showModal(){d.getElementById('modal-container').classList.remove('hidden');}
 
 
 function hideModal(btnID, modalContainerID){

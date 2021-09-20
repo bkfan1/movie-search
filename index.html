@@ -13,45 +13,68 @@
     <nav>
         <h1 class="nav-title">MovieSearch <i class="bi bi-search"></i></h1>
         <input type="text" name="" id="search-input" placeholder="Buscar series, películas...">
+        <div class="btn-container">
+            <button class="add-btn" id="add-btn"><i class="bi bi-plus-lg"></i> Add movie card</button>
+        </div>
     </nav>
 
     <section class="media-container" id="media-container">
 
         <div class="modal-container hidden" id="modal-container">
-
             <button class="modal-container-btn" id="modal-btn"><i class="bi bi-x-circle"></i></button>
-            
-            <figure class="modal-window" id="modal-window">
-                <img src="" alt="" class="modal-img" id="modal-img">
-    
-                <div class="modal-info-container">
-                    <h1 class="modal-title" id="modal-title"></h1>
-                    <h4 class="modal-mediatype" id="modal-mediatype"></h4>
-
-    
-                    <span class="modal-sinopsis-title">Sinopsis:</span>
-                    <p class="modal-description" id="modal-description"></p>
-                    <button class="modal-imdb-btn"><a href="" target="_blank" id="imdb-link">Ver perfil en IMDB <i class="bi bi-film color-black"></i></a></button>
-                </div>
-
-            </figure>
         </div>
 
     </section>
 
-    <template id="template-card">
+    <template id="card__template">
+
         <figure class="movie-card">
-            <div class="movie-content">
-                <img src="" id="movie-img" class="movie-img" alt="">
-                <div class="movie-card-info-container">
-                    <h1 id="modal-title" class="movie-card-title"></h1>
-                    <p id="modal-description" class="movie-card-description">
-                    </p>
-                </div>
-            </div>
+            <img src="" alt="" class="movie-card__img" id="movie-card__img">
         </figure>
+
     </template>
 
+    <template id="modal-window__template">
+
+        <figure class="modal-window" id="modal-window">
+            <img src="" alt="" class="modal-img" id="modal-img">
+
+            <div class="modal-info-container">
+                <h1 class="modal-title" id="modal-title"></h1>
+                <h4 class="modal-mediatype" id="modal-mediatype"></h4>
+
+
+                <span class="modal-sinopsis-title">Sinopsis:</span>
+                <p class="modal-description" id="modal-description"></p>
+                <button class="modal-imdb-btn"><a href="" target="_blank" id="imdb-link"><i class="bi bi-film color-black"></i> Ver perfil en IMDB</a></button>
+            </div>
+        </figure>
+
+    </template>
+
+    <template id="add-form__template">
+        <form action="" method="post" class="add-form">
+            <label for="">Título:</label>
+            <input type="text" name="" id="">
+          
+            <label for="">Sinopsis:</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          
+            <label for="">Año:</label>
+            <input type="number" name="" id="" min="1923" max="9999"> 
+          
+            <label for="">Ficha IMDB <strong>(URL):</strong></label>
+            <input type="text" name="" id="">
+          
+            <label for="">Tipo de metraje:</label>
+            <input type="text" name="" id="">
+            <button type="submit"><i class="bi bi-plus-lg"></i> Añadir película</button>
+        </form>
+    </template>
+
+    <footer>
+        <span>© Created by Jack (aka <strong>bkfan1</strong>) - 2021</span>
+    </footer>
     
     <script type="module" src="js/index.js"></script>
 </body>

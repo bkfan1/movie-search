@@ -18,7 +18,10 @@ async function renderCards(sectionID, templateID) {
             template.querySelector('figure').setAttribute('data-description',`${movie.description}`);
             template.querySelector('figure').setAttribute('data-year',`${movie.year}`);
             template.querySelector('figure').setAttribute('data-imdb',`${movie.imdb}`);
-            template.querySelector('img').setAttribute('src',`${movie.poster}`);
+            template.querySelector('figure').setAttribute('data-poster',`${movie.poster}`);
+
+            template.querySelector('.movie-card__img').setAttribute('src', `${movie.poster}`);
+
             let clone = d.importNode(template, true);
             fragment.appendChild(clone);
             section.appendChild(fragment);
@@ -31,4 +34,5 @@ async function renderCards(sectionID, templateID) {
             <span style="color:yellow">${ data.message }</span>
         </h1>`
     }
+
 }

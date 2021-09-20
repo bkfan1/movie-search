@@ -1,0 +1,260 @@
+@import 'variables.scss';
+
+/* ---- RESET ----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    border: none;
+    outline: none;    
+}
+
+/* ---- CUSTOM STYLES ---- */
+
+body{min-height: 100vh; background-color: #080f28;}
+
+button{
+    padding: 8.5px;
+    background-color:transparent;
+    border-radius: $rounded;
+
+    &:hover{cursor: pointer;}
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #141a32;
+
+    .nav-title{margin: 5px 0px; color: white;}
+
+    input{
+        padding: 5px;
+        border-radius: 5px;
+        text-align: center;
+        color: black;
+    }
+
+    input:focus{outline: $border-focus;}
+}
+
+textarea{resize: none;}
+
+.media-container{
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    place-items: center;
+    gap: 20px;
+
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.movie-card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    //background-color: grey;
+
+    &:hover{cursor: pointer; opacity: 90%;}
+
+    .movie-card__img{
+        position: absolute;
+        left: 0;
+        right:0;
+        top: 0;
+        bottom: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+.modal-container{
+    display: flex;
+    position: absolute;
+    z-index: 998;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height:100vh;
+    background-color: rgba(0, 0, 0, 0.842);
+
+    .modal-container-btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 40px;
+        color: white;
+
+        &:hover{cursor: pointer;}
+    }
+}
+
+.modal-window{
+    display: flex;
+    max-width: 555px;
+    height: 400px;
+
+    background-color: #141a32;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .modal-img{object-fit: cover; height: 100%;}
+    .modal-info-container{width: 100%; padding: 10px;}
+
+    .modal-title, .modal-mediatype, .modal-sinopsis-title ,.modal-description{color: white;}
+
+    .modal-mediatype{
+        margin-bottom: 12px;
+        font-size: 14.5px;
+        font-weight: normal;
+    }
+
+    .modal-title{margin-top: 5px;}
+
+    .modal-description{margin-top: 10px; text-align: justify;}
+
+    .modal-imdb-btn{
+        background-color: #ffcd35;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+
+        &:hover{background-color: #ffc005;transition: 230ms ease-in-out all;}
+    }
+
+    .modal-sinopsis-title{font-weight: bold;}
+
+    .modal-imdb-btn a{text-decoration: none; color: black;}
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    transition: 230ms all ease-in-out;
+    order: 1;
+}
+
+.btn-container{
+    margin-top: 10px;
+    .add-btn{
+        background-color: #007aff;
+        color: white;
+    }
+}
+
+.add-form{
+    display: flex;
+    flex-direction: column;
+
+    width: 480px;
+    height: max-content;
+    padding: 15px;
+    background-color: white;
+
+    label{margin:8px 0px;}
+
+    input{
+        padding: 5px;
+        border: 0.5px solid rgb(90, 90, 90);
+        border-radius: $rounded;
+
+        &:focus{border: $border-focus; background-color: $bg-focus;}
+    }
+
+    textarea{
+        border: $border-input;
+        border-radius: $rounded;
+
+        &:focus{background-color: $bg-focus;}
+    }
+
+    button{
+        margin-top: 10px;
+        color: white;
+        background-color: #007aff;
+        
+        &:hover{background-color: #005ec2; cursor: pointer;}
+    }
+}
+
+
+footer{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #141a32;
+
+    span{color: white;}
+}
+
+
+/* ---- MEDIA QUERIES ----*/
+
+@media screen and (max-width:1259px) {
+    .media-container{
+        grid-template-columns: repeat(3, minmax(100px,1fr));
+        grid-template-rows: repeat(3, minmax(100px, 1fr));
+    }
+}
+
+@media screen and (max-width:729px) {
+
+    .media-container{
+        grid-template-columns: repeat(2, minmax(100px,1fr));
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+@media screen and (max-width: 570px) {
+    
+    .modal-description{font-size: 1.55ch;}
+    .modal-window{width: 480px;height: 420px;}
+}
+
+@media screen and (max-width:494px) {
+
+    .media-container{
+        grid-template-columns: repeat(2, minmax(100px,1fr));
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .modal-description{font-size: 1.5ch;}
+    .modal-window{width: 450px;}
+}
+
+@media screen and (max-width:459px) {
+
+    .media-container{
+        grid-template-columns: repeat(2, minmax(100px,1fr));
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+@media screen and (max-width:454px) {
+
+    .media-container{
+        grid-template-columns: repeat(2, minmax(100px,1fr));
+        grid-template-rows: repeat(2, minmax(100px, 1fr));
+    }
+
+    .movie-card{width: 120px;height: 180px;}
+}
