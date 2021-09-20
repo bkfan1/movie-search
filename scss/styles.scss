@@ -14,6 +14,15 @@
 
 body{min-height: 100vh; background-color: #080f28;}
 
+main{
+
+    display:flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
 button{
     padding: 8.5px;
     background-color:transparent;
@@ -52,17 +61,18 @@ textarea{resize: none;}
     grid-template-columns: repeat(4, minmax(100px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     place-items: center;
-    gap: 20px;
+    gap: 30px;
+
+    padding: 20px 0px;
 
     width: 100%;
     min-height: 100vh;
-    padding: 20px;
 }
 
 .movie-card{
     position: relative;
-    width: 200px;
-    height: 300px;
+    width: 230px;
+    height: 350px;
     //background-color: grey;
 
     &:hover{cursor: pointer; opacity: 90%;}
@@ -73,9 +83,9 @@ textarea{resize: none;}
         right:0;
         top: 0;
         bottom: 0;
-        object-fit: cover;
+        object-fit:cover;
         width: 100%;
-        height: 100%;
+        height:100%;
     }
 
 }
@@ -154,7 +164,11 @@ textarea{resize: none;}
 }
 
 .btn-container{
-    margin-top: 10px;
+
+    display:flex;
+    justify-content: center;
+    padding-top: 10px;
+
     .add-btn{
         background-color: #007aff;
         color: white;
@@ -228,6 +242,9 @@ footer{
     
     .modal-description{font-size: 1.55ch;}
     .modal-window{width: 480px;height: 420px;}
+
+    .movie-card{width: 200px;height: 300px;}
+    
 }
 
 @media screen and (max-width:494px) {
@@ -255,6 +272,11 @@ footer{
         grid-template-columns: repeat(2, minmax(100px,1fr));
         grid-template-rows: repeat(2, minmax(100px, 1fr));
     }
+}
 
-    .movie-card{width: 120px;height: 180px;}
+@media screen and (max-width:360px ){
+    .media-container{
+        grid-template-columns: repeat(1, minmax(100px,1fr));
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    }
 }

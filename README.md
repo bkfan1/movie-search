@@ -3,7 +3,6 @@ Un buscador de series y películas (práctica).
 
 ## Metas:
 - ✅ Usar API Fetch para convertir las tarjetas (figure) estáticas a dinámicas.
-- ✅  Mejorar el responsive design del proyecto (98% completado).
 - ✅ Agregar una ficha de Imdb correspondiente cada película.
 
  - Agregar una película (y comprobar que uno haya una igual anteriormente).
@@ -45,4 +44,16 @@ Un buscador de series y películas (práctica).
 - Se agregaron nuevas etiquetas templates de algunos componentes a usar (modal-window y add-form).
 - Se agregó un pie de página (footer) al index.html.
 - Se agregó una función ( showForm() ) para testear un código y diseño en específico.
+- Se agregó un template para el formulario de añadir película.
 
+# 20/09/21
+
+- Se agregaron nuevas funciones al modulo modal.js (appendCardInfoModal, appendFormModal, createElement, destroySecondChild).
+- Se agregaron las funciones anteriormente citadas al archivo index.js.
+- Se agregaron comentarios a la función destroySecondChild().
+- Se renombró la función setModalInfo() a setCardInfoModal() (nombre más largo ome).
+- Se agregó la etiqueta main al archivo index.html.
+- Se movió la etiqueta con la clase "media-container" al archivo main, al igual que la etiqueta "modal-container".
+- Se agregó funcionalidad al botón "add movie card".
+- Se agregaron nuevos estilos al archivo styles.scss.
+- Se modificó el diseño y responsive design (media queries) principal.
