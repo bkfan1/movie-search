@@ -1,5 +1,5 @@
 # movie-search
-Un buscador de series y películas (práctica).
+CRUD de series y películas (práctica).
 
 ## Metas:
 - ✅ Usar API Fetch para convertir las tarjetas (figure) estáticas a dinámicas.
