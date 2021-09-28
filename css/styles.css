@@ -76,9 +76,8 @@ textarea {
   width: 230px;
   height: 350px;
 }
-.movie-card:hover {
-  cursor: pointer;
-  opacity: 90%;
+.movie-card:hover > .movie-card__options-menu {
+  visibility: visible;
 }
 .movie-card .movie-card__img {
   position: absolute;
@@ -89,6 +88,36 @@ textarea {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+.movie-card ul {
+  position: absolute;
+  z-index: 55;
+  display: flex;
+  right: 0;
+  list-style: none;
+  visibility: hidden;
+  padding: 5px;
+}
+.movie-card ul li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+.movie-card ul li button:hover {
+  opacity: 85%;
+}
+
+.edit-btn {
+  margin-right: 10px;
+  background-color: #007aff;
+}
+
+.remove-btn {
+  background-color: crimson;
 }
 
 .modal-container {
@@ -189,6 +218,7 @@ textarea {
   height: max-content;
   padding: 15px;
   background-color: white;
+  border-radius: 5px;
 }
 .add-form label {
   margin: 8px 0px;
@@ -211,6 +241,7 @@ textarea {
 }
 .add-form button {
   margin-top: 10px;
+  padding: 12px;
   color: white;
   background-color: #007aff;
 }
@@ -227,6 +258,19 @@ footer {
 }
 footer span {
   color: white;
+}
+
+.fake-textarea {
+  height: 180px;
+}
+
+.warning-message {
+  margin-top: 10px;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  background-color: crimson;
 }
 
 /* ---- MEDIA QUERIES ----*/

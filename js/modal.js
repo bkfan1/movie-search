@@ -36,10 +36,11 @@ function appendCardInfoModal(){
     })
 }
 
-function appendFormModal(btnID, form){
+function appendFormModal(btnID, formTemplate){
 
     let btn = d.getElementById(btnID);
     let modalContainer = d.getElementById('modal-container');
+    let form = createElement(formTemplate);
 
     d.addEventListener("click", (e)=>{
         if(e.target === btn){
@@ -84,3 +85,4 @@ function destroySecondChild(){
         modalContainer.removeChild(modalContainer.lastElementChild);
     }
 }
+

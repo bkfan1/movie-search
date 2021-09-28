@@ -1,92 +1,76 @@
-[
+{
+  "movies": [
     {
-        "id": "kill-bill-vol1",
-        "title": "Kill Bill Vol.1",
-        "type":"Película",
-        "description": "Una mujer embarazada, identificada como la Novia, es masacrada y tiroteada en la cabeza, en el ensayo de su boda en una pequeña iglesia al sur de Texas, por sus antiguos camaradas del Escuadrón Asesino Víbora Letal, un grupo de asesinos profesionales que trabajan para el mejor postor, venganza, guerra de bandas de traficantes de drogas y asesinatos políticos.",
-        "year": 2003,
-        "poster": "assets/movie-1.jpg",
-        "imdb": "https://www.imdb.com/title/tt0266697/"
-
+      "id": "kill-bill-vol1",
+      "title": "Kill Bill Vol.1",
+      "type": "Película",
+      "description": "Una mujer embarazada, identificada como la Novia, es masacrada y tiroteada en la cabeza, en el ensayo de su boda en una pequeña iglesia al sur de Texas, por sus antiguos camaradas del Escuadrón Asesino Víbora Letal, un grupo de asesinos profesionales que trabajan para el mejor postor, venganza, guerra de bandas de traficantes de drogas y asesinatos políticos.",
+      "year": 2003,
+      "poster": "assets/movie-1.jpg",
+      "imdb": "https://www.imdb.com/title/tt0266697/"
     },
     {
-        "id": "batman-begins",
-        "title": "Batman Begins",
-        "type":"Película",
-        "description": "En su búsqueda por aprender los entresijos de la mente criminal, Bruce es adiestrado por un misterioso hombre llamado Ducard en el dominio de las disciplinas físicas y mentales que le otorgarán el poder para combatir el mal que ha jurado destruir.",
-        "year": 2004,
-        "poster": "assets/movie-2.jpg",
-        "imdb": "https://www.imdb.com/title/tt0372784/?ref_=fn_al_tt_1"
+      "id": "the-godfather",
+      "title": "The Godfather",
+      "type": "Película",
+      "description": "El Padrino narra la historia de un hombre, Vito Corleone, el capo más respetado de Nueva York. Déspota benevolente, implacable con sus rivales, inteligente y fiel a los principios del honor y la amistad.",
+      "year": 1972,
+      "poster": "assets/movie-3.jpg",
+      "imdb": "https://www.imdb.com/title/tt0068646/?ref_=nv_sr_srsg_0"
     },
     {
-        "id": "the-godfather",
-        "title": "The Godfather",
-        "type":"Película",
-        "description": "El Padrino narra la historia de un hombre, Vito Corleone, el capo más respetado de Nueva York. Déspota benevolente, implacable con sus rivales, inteligente y fiel a los principios del honor y la amistad.",
-        "year": 1972,
-        "poster": "assets/movie-3.jpg",
-        "imdb": "https://www.imdb.com/title/tt0068646/?ref_=nv_sr_srsg_0"
-
+      "id": "scarface",
+      "title": "Scarface",
+      "type": "Película",
+      "description": "Antonio «Tony» Montana (Al Pacino) es un expresidiario cubano que llega a los Estados Unidos durante el éxodo de Mariel en mayo de 1980. Junto a su mejor amigo, Manolo «Manny» Ribera (Steven Bauer), son recluidos en Cayo Hueso con el resto de los demás refugiados cubanos a la espera de una resolución política.",
+      "year": 1983,
+      "poster": "assets/movie-4.jpg",
+      "imdb": "https://www.imdb.com/title/tt0086250/?ref_=nv_sr_srsg_0"
     },
     {
-        "id": "scarface",
-        "title": "Scarface",
-        "type":"Película",
-        "description": "Antonio «Tony» Montana (Al Pacino) es un expresidiario cubano que llega a los Estados Unidos durante el éxodo de Mariel en mayo de 1980. Junto a su mejor amigo, Manolo «Manny» Ribera (Steven Bauer), son recluidos en Cayo Hueso con el resto de los demás refugiados cubanos a la espera de una resolución política.",
-        "year": 1983,
-        "poster": "assets/movie-4.jpg",
-        "imdb": "https://www.imdb.com/title/tt0086250/?ref_=nv_sr_srsg_0"
-
+      "id": "mr-robot",
+      "title": "Mr. Robot",
+      "type": "TV Series",
+      "description": "Mr. Robot es una serie de televisión de género tecno-thriller y drama estadounidense creada por Sam Esmail. Está protagonizada por Rami Malek como Elliot Alderson, un ingeniero de seguridad informática y pirata informático que padece un trastorno de ansiedad social y depresión clínica.",
+      "year": 2015,
+      "poster": "assets/movie-5.jpg",
+      "imdb": "https://www.imdb.com/title/tt4158110/?ref_=fn_al_tt_2"
     },
     {
-        "id": "mr-robot",
-        "title": "Mr. Robot",
-        "type":"TV Series",
-        "description": "Mr. Robot es una serie de televisión de género tecno-thriller y drama estadounidense creada por Sam Esmail. Está protagonizada por Rami Malek como Elliot Alderson, un ingeniero de seguridad informática y pirata informático que padece un trastorno de ansiedad social y depresión clínica.",
-        "year": 2015,
-        "poster": "assets/movie-5.jpg",
-        "imdb": "https://www.imdb.com/title/tt4158110/?ref_=fn_al_tt_2"
-
+      "id": "daredevil-netflix",
+      "title": "Daredevil",
+      "type": "TV Series",
+      "description": "'Daredevil' gira en torno a Matt Murdock, un abogado de día y superhéroe de noche. A pesar de ser ciego, posee un oído, un olfato, una fuerza y una agilidad increíblemente desarrolladas. ... La serie, de corte dramático, con aventuras y mucha acción, está basada en el cómic homónimo de Marvel.",
+      "year": 2015,
+      "poster": "assets/movie-6.jpg",
+      "imdb": "https://www.imdb.com/title/tt3322312/?ref_=fn_al_tt_1"
     },
     {
-        "id": "daredevil-netflix",
-        "title": "Daredevil",
-        "type":"TV Series",
-        "description": "'Daredevil' gira en torno a Matt Murdock, un abogado de día y superhéroe de noche. A pesar de ser ciego, posee un oído, un olfato, una fuerza y una agilidad increíblemente desarrolladas. ... La serie, de corte dramático, con aventuras y mucha acción, está basada en el cómic homónimo de Marvel.",
-        "year": 2015,
-        "poster": "assets/movie-6.jpg",
-        "imdb": "https://www.imdb.com/title/tt3322312/?ref_=fn_al_tt_1"
-
+      "id": "silicon-valley",
+      "title": "Silicon Valley",
+      "type": "TV Series",
+      "description": "Richard es un tímido programador que vive con sus tres únicos amigos y descubren un importante algoritmo que supondrá una batalla con intereses y falsas amistades. Además, una chica se cruza por primera vez en la vida de Richard.",
+      "year": 2015,
+      "poster": "assets/movie-7.jpg",
+      "imdb": "https://www.imdb.com/title/tt2575988/?ref_=fn_al_tt_1"
     },
     {
-        "id": "silicon-valley",
-        "title": "Silicon Valley",
-        "type":"TV Series",
-        "description": "Richard es un tímido programador que vive con sus tres únicos amigos y descubren un importante algoritmo que supondrá una batalla con intereses y falsas amistades. Además, una chica se cruza por primera vez en la vida de Richard.",
-        "year": 2015,
-        "poster": "assets/movie-7.jpg",
-        "imdb": "https://www.imdb.com/title/tt2575988/?ref_=fn_al_tt_1"
+      "id": "el-patron-del-mal",
+      "title": "Pablo Escobar: El Patrón del Mal",
+      "type": "TV Series",
+      "description": "Serie de televisión de drama criminal colombiana producida y emitida por Caracol Televisión en el 2012. La serie es una historia basada en el libro La parábola de Pablo, del periodista y exalcalde de Medellín Alonso Salazar, basada en varios documentos periodísticos y testimonios reales,​ aunque también en relatos ficticios.​",
+      "year": 2012,
+      "poster": "assets/movie-8.jpg",
+      "imdb": "https://www.imdb.com/title/tt2187850/"
     },
     {
-        "id": "el-patron-del-mal",
-        "title": "Pablo Escobar: El Patrón del Mal",
-        "type":"TV Series",
-        "description": "Serie de televisión de drama criminal colombiana producida y emitida por Caracol Televisión en el 2012. La serie es una historia basada en el libro La parábola de Pablo, del periodista y exalcalde de Medellín Alonso Salazar, basada en varios documentos periodísticos y testimonios reales,​ aunque también en relatos ficticios.​",
-        "year": 2012,
-        "poster": "assets/movie-8.jpg",
-        "imdb": "https://www.imdb.com/title/tt2187850/"
+      "id": "lo-que-el-agua-se-llevó",
+      "title": "Lo que el agua se llevó",
+      "type": "Animación",
+      "description": "Roddy es una rata de la alta sociedad que vive como un rey en un piso de Kensington atendido por dos mayordomos, los hámsters Gilbert y Sullivan.",
+      "year": "2004",
+      "poster": "https://www.upload.ee/image/13501063/flushed-away.png",
+      "imdb": "https://www.imdb.com/title/tt0424095/"
     }
-    
-]
-
-
-
-
-
-
-
-
-
-
-
-
+  ]
+}

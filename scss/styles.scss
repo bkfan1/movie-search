@@ -75,7 +75,7 @@ textarea{resize: none;}
     height: 350px;
     //background-color: grey;
 
-    &:hover{cursor: pointer; opacity: 90%;}
+    &:hover > .movie-card__options-menu{visibility: visible;}
 
     .movie-card__img{
         position: absolute;
@@ -88,8 +88,32 @@ textarea{resize: none;}
         height:100%;
     }
 
+    ul{
+        position: absolute;
+        z-index: 55;
+        display: flex;
+        right: 0;
+        list-style: none;
+        visibility: hidden;
+
+        padding: 5px;
+
+        li button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            width: 30px;
+            height: 30px;
+            color: white;
+
+            &:hover{opacity: 85%;}
+        }
+    }
 }
 
+.edit-btn{margin-right: 10px; background-color: #007aff;}
+.remove-btn{background-color: crimson;}
 
 .modal-container{
     display: flex;
@@ -183,6 +207,7 @@ textarea{resize: none;}
     height: max-content;
     padding: 15px;
     background-color: white;
+    border-radius: $rounded;
 
     label{margin:8px 0px;}
 
@@ -203,6 +228,7 @@ textarea{resize: none;}
 
     button{
         margin-top: 10px;
+        padding: 12px;
         color: white;
         background-color: #007aff;
         
@@ -218,6 +244,20 @@ footer{
     background-color: #141a32;
 
     span{color: white;}
+}
+
+
+.fake-textarea{
+    height: 180px;
+}
+
+.warning-message{
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border-radius: $rounded;
+    background-color: crimson;
 }
 
 

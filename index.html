@@ -35,6 +35,10 @@
     <template id="card__template">
 
         <figure class="movie-card">
+            <ul class="movie-card__options-menu">
+                <li><button id="edit-btn" class="edit-btn"><i class="bi bi-pencil-square"></i></button></li>
+                <li><button id="remove-btn" class="remove-btn"><i class="btn-icon bi bi-trash"></i></button></li>
+            </ul>
             <img src="" alt="" class="movie-card__img" id="movie-card__img">
         </figure>
 
@@ -59,22 +63,29 @@
     </template>
 
     <template id="add-form__template">
-        <form action="" method="post" class="add-form">
+        <form action="" method="" class="add-form" id="add-form">
             <label for="">Título:</label>
-            <input type="text" name="" id="">
+            <input type="text" name="title" value="" id="" class="form-input">
           
             <label for="">Sinopsis:</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <input type="text" name="sinopsis" id="" class="form-input fake-textarea">
           
             <label for="">Año:</label>
-            <input type="number" name="" id="" min="1923" max="9999"> 
+            <input type="number" name="year" value="" id="" min="1923" max="9999" class="form-input">
+            
+            <label for="">Poster <strong>(URL):</strong></label>
+            <input type="text" name="poster" value="" id="" class="form-input">
           
             <label for="">Ficha IMDB <strong>(URL):</strong></label>
-            <input type="text" name="" id="">
+            <input type="text" name="imdb_card" value="" id="" class="form-input">
           
             <label for="">Tipo de metraje:</label>
-            <input type="text" name="" id="">
-            <button type="submit"><i class="bi bi-plus-lg"></i> Añadir película</button>
+            <input type="text" name="type" id="" value="" class="form-input">
+            <span class="warning-message hidden">
+                <i class="bi bi-exclamation-triangle"></i>
+                Verifica que todos los campos estén correctos.
+            </span>
+            <button type="submit" id="add-movie__form-btn"><i class="bi bi-plus-lg"></i> Añadir película</button>
         </form>
     </template>
 
