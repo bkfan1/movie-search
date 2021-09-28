@@ -6,7 +6,7 @@ CRUD de series y películas (práctica).
 - ✅ Agregar una ficha de Imdb correspondiente cada película.
 - ✅ Agregar una película
 - ✅ Eliminar película
-- Modificar datos de una película ya existente.
+- ✅ Modificar datos de una película ya existente.
 - Comprobar que hay una película a la que quieres agregar
 
  
@@ -60,9 +60,14 @@ CRUD de series y películas (práctica).
 - Se modificó el diseño y responsive design (media queries) principal.
 
 # 27/09/21
+- Se corrigió la estructura del archivo db.json.
 - Se agregó un nuevo módulo: crud.js
 - Se agregaron, importaron y exportaron nuevas funciones: createMovie(), deleteMovie(), validateForm(), validateField().
 - Se agregó un nuevo formulario "add-form" (template).
 - Se agregó una ul con botones de acciones (editar y eliminar) a las tarjetas de las películas (HTML).
 - Se agregaron nuevos estilos al archivo styles.scss.
 
+# 28/09/21
+- Se agregó una nueva función: editMovie().
+- Se modificaron las funciones appendFormModal(), deleteMovie() y addMovie().
+- Se agregaron más comentarios al código de distintas funciones y módulos.

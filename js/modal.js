@@ -36,19 +36,23 @@ function appendCardInfoModal(){
     })
 }
 
-function appendFormModal(btnID, formTemplate){
+function appendFormModal(btnSelector, formTemplate){
 
-    let btn = d.getElementById(btnID);
+    let btns = d.querySelectorAll(btnSelector);
     let modalContainer = d.getElementById('modal-container');
-    let form = createElement(formTemplate);
 
-    d.addEventListener("click", (e)=>{
-        if(e.target === btn){
+    btns.forEach((btn)=>{
+
+        btn.addEventListener('click',()=>{
             destroySecondChild();
+            let form = createElement(formTemplate);
             modalContainer.appendChild(form);
             showModal();
-        }
+            // console.log(form);
+        })
+
     })
+
 }
 
 
@@ -84,5 +88,6 @@ function destroySecondChild(){
     if(modalContainer.childElementCount >= 2){
         modalContainer.removeChild(modalContainer.lastElementChild);
     }
+    else{return;}
 }
 
