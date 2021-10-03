@@ -85,7 +85,7 @@ function createMovie(){
                         imdb: inputs[4].value
                     }
 
-                    fetch('http://localhost:5500/movies', {
+                    fetch('https://bkfan1.github.io/movie-search/js/db.json', {
                         method: 'POST',
                         body: JSON.stringify(newMovie),
                         headers: {
@@ -121,7 +121,7 @@ function deleteMovie(){
             let isDeleting = confirm('¿Estás seguro de que quieres eliminar esta película?:');
             if(isDeleting){
                 
-                fetch(`http://localhost:5500/movies/${btn.getAttribute('data-id')}`, options)
+                fetch(`https://bkfan1.github.io/movie-search/js/db.json/${btn.getAttribute('data-id')}`, options)
                 .then((res)=>{if(res.ok){console.log(`Se ha eliminado la película con éxito`)}})
                 .catch((err)=>{alert(`Ha ocurrido un error al intentar eliminar la película: ${err.message}`)});
             }
@@ -182,7 +182,7 @@ function editMovie(){
                             imdb: inputs[4].value
                         }
 
-                        fetch(`http://localhost:5500/movies/${btn.getAttribute('data-id')}`,{
+                        fetch(`https://bkfan1.github.io/movie-search/js/db.json/${btn.getAttribute('data-id')}`,{
                             method: "PUT",
                             headers: {"Content-type": "application/json; charset=UTF-8"},
                             body: JSON.stringify(editedMovie)
