@@ -3,7 +3,7 @@ export {fetchMovies};
 async function fetchMovies(){
     //console.log('fetching...')
     try {
-        const res = await fetch('https://bkfan1.github.io/movie-search/js/db.json');
+        const res = await fetch('./js/db.json');
         if (!res.ok) throw Error("Couldn't fetch the data for that resource");
         const data = await res.json();
         return { data, success: true }
